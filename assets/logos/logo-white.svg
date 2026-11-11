@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 112" role="img" aria-label="GLOBAL SOLUTIONS">
+  <!-- Monogram -->
+  <g>
+    <rect x="4" y="12" width="88" height="88" rx="10" fill="#FFFFFF" fill-opacity="0.08"/>
+    <rect x="4.75" y="12.75" width="86.5" height="86.5" rx="9.25" fill="none" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="1.5"/>
+    <path d="M4 30 L4 22 A10 10 0 0 1 14 12 L30 12 L4 30 Z" fill="#E99A35"/>
+    <path d="M92 92 L92 100 A10 10 0 0 1 82 112 L66 112 L92 92 Z" fill="#E99A35" opacity="0.85"/>
+    <text x="48" y="71" text-anchor="middle" font-family="Manrope, Montserrat, 'Segoe UI', Arial, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF" letter-spacing="-1">GS</text>
+    <rect x="30" y="82" width="36" height="4" rx="2" fill="#E99A35"/>
+  </g>
+  <!-- Wordmark -->
+  <g>
+    <text x="116" y="52" font-family="Manrope, Montserrat, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="800" fill="#FFFFFF" letter-spacing="1.5">GLOBAL</text>
+    <text x="116" y="84" font-family="Manrope, Montserrat, 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="500" fill="#FFFFFF" fill-opacity="0.82" letter-spacing="5.6">SOLUTIONS</text>
+    <text x="118" y="103" font-family="Inter, Roboto, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="600" fill="#E99A35" letter-spacing="3.2">BTP · HYDRAULIQUE · GÉNIE CIVIL</text>
+  </g>
+</svg>

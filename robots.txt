@@ -1,0 +1,6 @@
+# robots.txt — GLOBAL SOLUTIONS (https://globalsolutions.one)
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://globalsolutions.one/sitemap.xml

@@ -1,0 +1,343 @@
+/* ==========================================================================
+   GLOBAL SOLUTIONS — Adaptation responsive (Mobile First renforcé)
+   ========================================================================== */
+
+/* --- Très grands écrans : respiration accrue --------------------------- */
+@media (min-width: 1500px) {
+  :root {
+    --container: 1320px;
+  }
+
+  .hero h1 {
+    font-size: 5.15rem;
+  }
+}
+
+/* --- Écrans larges ------------------------------------------------------ */
+@media (max-width: 1200px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step::after {
+    display: none;
+  }
+
+  .org-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-main {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    max-width: 34rem;
+  }
+}
+
+/* --- Navigation compacte ------------------------------------------------ */
+@media (max-width: 1080px) {
+  .nav-main,
+  .header-cta {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  .split .media-frame {
+    max-width: 44rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-panel {
+    position: static;
+  }
+
+  .cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta-action {
+    justify-items: start;
+    width: 100%;
+    max-width: 26rem;
+  }
+}
+
+/* --- Tablettes ---------------------------------------------------------- */
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content {
+    padding-top: calc(var(--header-h) + 2.5rem);
+    padding-bottom: 10.5rem;
+  }
+
+  .hero-foot-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.95rem;
+    padding-block: 1.15rem 1.35rem;
+  }
+
+  .scroll-cue {
+    display: none;
+  }
+
+  .expertise-block {
+    grid-template-columns: 1fr;
+    gap: 2.15rem;
+  }
+
+  .expertise-block:nth-child(even) .expertise-media {
+    order: 0;
+  }
+
+  .expertise-nav {
+    margin-top: -1.75rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .stat:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--gray-100);
+  }
+
+  .prestations {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* --- Petites tablettes / grands smartphones ----------------------------- */
+@media (max-width: 720px) {
+  body {
+    font-size: 1.025rem;
+  }
+
+  :root {
+    --header-h: 4.5rem;
+  }
+
+  .brand img {
+    height: 2.65rem;
+  }
+
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.25rem, 9.2vw, 3.15rem);
+  }
+
+  .hero .lead {
+    font-size: 1.045rem;
+  }
+
+  .hero .btn-row .btn {
+    width: 100%;
+  }
+
+  .hero-foot-items {
+    gap: 1.15rem 1.75rem;
+  }
+
+  .hero-foot-item {
+    font-size: 0.855rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    border-right: none;
+    border-bottom: 1px solid var(--gray-100);
+  }
+
+  .stat:last-child {
+    border-bottom: none;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-foot {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-foot .btn {
+    width: 100%;
+  }
+
+  .quick-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-bar {
+    justify-content: flex-start;
+  }
+
+  .filter-btn {
+    padding: 0.62rem 1.15rem;
+    font-size: 0.755rem;
+  }
+
+  .org-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-action {
+    max-width: none;
+  }
+
+  .cta-action .btn {
+    width: 100%;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-legal-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .back-to-top {
+    right: 1.05rem;
+    bottom: 1.05rem;
+  }
+
+  .whatsapp-float {
+    right: 1.05rem;
+    bottom: 5.1rem;
+  }
+
+  .map-frame {
+    height: 19rem;
+  }
+
+  .map-card .map-head {
+    padding: 1.25rem 1.35rem;
+  }
+
+  .media-frame .frame-badge {
+    left: 1rem;
+    bottom: 1rem;
+    padding: 0.85rem 1.1rem;
+  }
+
+  .team-portrait .monogram {
+    width: 6.15rem;
+    height: 6.15rem;
+    font-size: 1.85rem;
+  }
+}
+
+/* --- Smartphones compacts ----------------------------------------------- */
+@media (max-width: 420px) {
+  .btn {
+    padding: 0.95rem 1.55rem;
+    font-size: 0.79rem;
+  }
+
+  .hero-kicker {
+    font-size: 0.665rem;
+    letter-spacing: 0.15em;
+  }
+
+  .page-hero {
+    padding-top: calc(var(--header-h) + 2.75rem);
+    padding-bottom: 2.85rem;
+  }
+
+  .nav-mobile a {
+    font-size: 1.35rem;
+  }
+
+  .project-meta div {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .project-meta dd {
+    text-align: left;
+  }
+
+  .error-code {
+    -webkit-text-stroke-width: 1.5px;
+  }
+}
+
+/* --- Impression ---------------------------------------------------------- */
+@media print {
+  .site-header,
+  .nav-mobile,
+  .back-to-top,
+  .whatsapp-float,
+  .hero-foot,
+  .scroll-progress {
+    display: none !important;
+  }
+
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  .hero,
+  .page-hero,
+  .section--dark,
+  .cta-banner,
+  .site-footer {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+}
